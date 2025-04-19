@@ -1,22 +1,62 @@
-.formulario{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.formulario {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin: 0 auto;
-    max-width: 600px;
-    max-height: 20px;
+    gap: 0.25rem;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 30%; /* Reduz a largura para deixá-lo mais estreito */
+    max-height: 10vh; /* Reduz a altura para deixá-lo mais curto */
     background-color: #6278F7;
     border-radius: 8px;
+    box-sizing: border-box; /* Garante que padding não afete o tamanho total */
 }
-.formulario form{
+
+.formulario form {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #6278F7;
+    border-radius: 6px;
 }
 
-.formulario h2{
+.formulario h2 {
     color: #fff;
     text-align: center;
-    margin-bottom: 0.05rem;
+    margin-bottom: 0.5rem;
+    margin-top: none;
+    background-color: #6278F7;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .formulario {
+        max-width: 50%; /* Ajusta a largura para telas menores */
+        max-height: 15vh; /* Ajusta a altura para telas menores */
+        padding: 0.5rem;
+    }
+
+    .formulario h2 {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+    }
+}
+
+/* Media query para telas muito pequenas */
+@media (max-width: 480px) {
+    .formulario {
+        max-width: 80%; /* Ajusta a largura para telas muito pequenas */
+        max-height: 20vh; /* Ajusta a altura para telas muito pequenas */
+        padding: 0.5rem;
+    }
+
+    .formulario h2 {
+        font-size: 1rem; /* Fonte menor para telas pequenas */
+    }
 }
