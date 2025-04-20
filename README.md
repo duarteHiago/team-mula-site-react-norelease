@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Documentação Técnica do Projeto: Team Mula – Protótipo de Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 1. Introdução
 
-In the project directory, you can run:
+Este documento descreve a estrutura técnica do projeto **Team Mula**, um protótipo de website desenvolvido como estudo prático de tecnologias web modernas. O projeto encontra-se **em andamento** e não está finalizado, estando sujeito a ajustes estruturais e visuais à medida que novas funcionalidades são incorporadas.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 2. Interface do Usuário (UI)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center">
+  <img src="./assets/imagemUI.png" alt="Interface do site" width="600"/>
+</p>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 3. Objetivo Geral
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O objetivo do projeto é aplicar conhecimentos teóricos em um ambiente prático, desenvolvendo a estrutura inicial de um website com foco em **componentização**, **responsividade** e **boas práticas de desenvolvimento front-end**, utilizando tecnologias amplamente adotadas no mercado.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 4. Tecnologias e Ferramentas Utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Tecnologia/Ferramenta | Finalidade |
+| --- | --- |
+| **HTML5** | Marcação semântica do conteúdo |
+| **CSS3** | Estilização visual do layout |
+| **JavaScript (ES6+)** | Lógica da aplicação e manipulação de eventos |
+| **React.js** | Criação de interfaces reutilizáveis e reativas |
+| **Node.js / npm** | Ambiente de execução e gerenciamento de pacotes |
+| **Create React App** | Inicialização rápida do projeto com configuração padrão |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 5. Estrutura do Projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A arquitetura do repositório segue o padrão criado pelo `Create React App`, promovendo organização e escalabilidade:
 
-## Learn More
+```
+team-mula-site-react-norelease/
+├── public/
+│   └── index.html          
+├── src/
+│   ├── components/        
+│   ├── App.js             
+│   └── index.js            
+├── package.json            
+├── README.md               
+└── .gitignore           
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 6. Instalação e Execução Local
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 6.1. Pré-requisitos
 
-### Analyzing the Bundle Size
+- **Node.js** (versão 16 ou superior)
+- **npm** ou **yarn**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 6.2. Passos para execução
 
-### Making a Progressive Web App
+```bash
+# Clonar o repositório
+git clone https://github.com/duarteHiago/team-mula-site-react-norelease.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 6.2.1 Instalar Dependências
 
-### Advanced Configuration
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 6.2.2 Iniciar o Servidor de Desenvolvimento
 
-### Deployment
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Após isso, o projeto estará disponível em `http://localhost:3000`.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 7. Considerações Finais
+
+O projeto **Team Mula** é parte de um processo de aprendizado contínuo e tem **caráter exclusivamente educacional**. Ele está em fase inicial de desenvolvimento e será progressivamente expandido com novas funcionalidades, melhorias visuais e práticas modernas de engenharia de software.
+
+Esta documentação será atualizada à medida que o projeto evoluir.
