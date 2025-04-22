@@ -4,7 +4,7 @@ import CampoTexto from '../CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
 import './Formulario.css';
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const [nome,setNome] = useState('');
     const [nick,setNick] = useState('');
@@ -13,10 +13,18 @@ const Formulario = () => {
     const [jogo,setJogo] = useState('');
 
     const Jogo = ['Selecione seu jogo...', 'Counter-Strike 2', 'Dota 2', 'Valorant', 'Rocket League'];
-    const aoSalvar = (evento) => {    
+
+    const aoSalvar = (evento) => {
         evento.preventDefault();
-        console.log('Formulário salvo!');
+        props.aoColaboradorCadastrado({
+            nome,
+            nick,
+            funcao,
+            imagem,
+            jogo
+        });
     }
+
     return (
         <section className="formulario">
             <h2>PREENCHA OS DADOS PARA GERAR OS DADOS DO JOGADOR...</h2>
