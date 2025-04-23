@@ -13,7 +13,7 @@
 
 .campo-texto input{
     width: 100%;
-    padding: 12px; /* Reduz o padding para diminuir a altura */
+    padding: 20px; /* Reduz o padding para diminuir a altura */
     border: none;
     box-shadow: 5px 5px 5px rgb(54, 54, 54);
     border-radius: 4px;

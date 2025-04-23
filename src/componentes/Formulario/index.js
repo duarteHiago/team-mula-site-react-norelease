@@ -12,7 +12,7 @@ const Formulario = (props) => {
     const [imagem,setImagem] = useState('');
     const [jogo,setJogo] = useState('');
 
-    const Jogo = ['Selecione seu jogo...', 'Counter-Strike 2', 'Dota 2', 'Valorant', 'Rocket League'];
+    console.log("Times recebidos no Formulario:", props.times);
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
@@ -31,7 +31,7 @@ const Formulario = (props) => {
             <form onSubmit={aoSalvar}>
                 <CampoTexto obrigatorio={true} label="Nome" placeholder="Digite seu nome..." required value={nome} aoAlterado={valor => setNome(valor)}/>
                 <CampoTexto obrigatorio={true} label="Nick" placeholder="Digite seu nick..." required value={nick} aoAlterado={valor => setNick(valor)}/>
-                <ListaSuspensa obrigatorio={true} label ="Jogo" itens={Jogo} required value={jogo} aoAlterado={valor => setJogo(valor)}/>
+                <ListaSuspensa obrigatorio={true} label ="Jogo" itens={props.jogos} required value={jogo} aoAlterado={valor => setJogo(valor)}/>
                 <CampoTexto obrigatorio={true} label="Funcao" placeholder="Digite sua funcao..." required value={funcao} aoAlterado={valor => setFuncao(valor)}/>
                 <CampoTexto label="Imagem" placeholder="Digite o endereco da imagem..." required value={imagem} aoAlterado={valor => setImagem(valor)}/>
                 <Botao>
