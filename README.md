@@ -18,6 +18,18 @@ Este documento descreve a estrutura técnica do projeto **Team Mula**, um protó
 
 ---
 
+---
+
+# 2.1 Interface dos Cards Gerados
+
+<p align="center">
+  <img src="./assets/imagemCards.png" alt="Interface do site" width="600"/>
+</p>
+
+
+
+---
+
 ## 3. Objetivo Geral
 
 O objetivo do projeto é aplicar conhecimentos teóricos em um ambiente prático, desenvolvendo a estrutura inicial de um website com foco em **componentização**, **responsividade** e **boas práticas de desenvolvimento front-end**, utilizando tecnologias amplamente adotadas no mercado.
