@@ -15,9 +15,6 @@ Este documento descreve a estrutura técnica do projeto **Team Mula**, um protó
 </p>
 
 
-
----
-
 ---
 
 # 2.1 Interface dos Cards Gerados
