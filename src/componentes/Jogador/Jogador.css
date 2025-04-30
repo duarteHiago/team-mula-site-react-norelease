@@ -1,24 +1,35 @@
 .jogador {
-    width: 280px;
+    width: 220px; /* Largura fixa */
+    height: 260px; /* Altura fixa */
+    margin: 0; /* Remove margens extras */
+    background-color: #cecece;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse o card */
 }
 
 .jogador .cabecalho {
-    background-color:  #F0F0F0;
+    background-color:  #969696;
     border-radius: 10px 10px 0px 0px;
 }
 .jogador img {
-    width: 100px;
+    width: 80px;
     border-radius: 50%;
     position: relative;
     bottom: -50px;
 }
 
 .jogador .rodape {
-    background: #FFFFFF;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    background: #cecece;
+    /*box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);*/
     border-radius: 0px 0px 10px 10px;
-    padding-top: 90px;
-    padding-bottom: 40px;
+    padding: 10px;
+    height: 100px; /* Altura fixa para o rodapé */
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 .jogador .rodape h4 {
@@ -26,12 +37,18 @@
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin: 0; /* Remove margens extras */
+    height: 24px; /* Altura fixa para o nome */
+    overflow: hidden; /* Esconde o texto que ultrapassar */
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    margin-top: 45px; /* Espaço entre a imagem e o nome */
 }
 
 .jogador .rodape h5 {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 20px;
     color: #212121;
-    padding: 0 16px;
+    margin: 0; /* Remove margens extras */
+    margin-top: auto;
 }

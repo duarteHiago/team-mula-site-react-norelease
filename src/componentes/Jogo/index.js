@@ -7,10 +7,15 @@ const Jogo = (props) => {
 
     return (
         console.log('Jogo renderizado'),
-        <section className="jogo" style={estilo}>
+
+        (props.jogadores.length > 0) ?<section className="jogo" style={estilo}>
             <h3>{props.nome}</h3>
-            <Jogador/>
+            <div className="jogadores">
+                {props.jogadores.map(jogador => <Jogador nome={jogador.nome} funcao={jogador.funcao} imagem={jogador.imagem}/>)}
+            </div>
         </section>
+
+        :''
     )
 }
 

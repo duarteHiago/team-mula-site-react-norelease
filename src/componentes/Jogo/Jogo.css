@@ -8,6 +8,7 @@
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 24px;
     width: 50%; /* Ajuste conforme necessário */
 }
 
@@ -25,4 +26,13 @@
     padding: 2px; /* Reduz o espaçamento interno */
     width: auto; /* Ajusta a largura ao conteúdo */
     margin: 0 auto; /* Centraliza o texto horizontalmente */
+}
+
+.jogadores{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    gap: 12px; /* Espaçamento entre os jogadores */
+
 }

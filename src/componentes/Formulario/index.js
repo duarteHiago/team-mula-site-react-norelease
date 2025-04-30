@@ -16,12 +16,12 @@ const Formulario = (props) => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
-        props.aoColaboradorCadastrado({
+        props.aoJogadorCadastrado({
             nome,
             nick,
             funcao,
             imagem,
-            jogo
+            jogo,
         });
     }
 

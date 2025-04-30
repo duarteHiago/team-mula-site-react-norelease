@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Jogo from './componentes/Jogo';
+import Jogador from './componentes/Jogador';
 
 
 function App() {
@@ -13,19 +14,25 @@ function App() {
     { nome: "Rocket League", cor: "#ffff" },
   ];
 
-  const [colaboradores, setColaboradores] = useState([]);
+  const [jogadores, setJogadores] = useState([]);
 
-  const aoNovoColaboradorAdicionado = (colaborador) => {
-    setColaboradores([...colaboradores, colaborador]);
-    console.log(colaboradores);
+  const aoNovoJogadorAdicionado = (jogador) => {
+    setJogadores([...jogadores, jogador]);
+    console.log(jogadores);
   }
 
   return (
     <div className="App">
         <Banner />
-        <Formulario jogos={jogos.map(jogo => jogo.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
+        <Formulario jogos={jogos.map(jogo => jogo.nome)} aoJogadorCadastrado={jogador => aoNovoJogadorAdicionado(jogador)} />
         <div className="jogos">
-        {jogos.map(jogo => <Jogo key={jogo.nome} nome={jogo.nome} cor={jogo.cor} />)}
+
+        {jogos.map(jogo => <Jogo
+          key={jogo.nome}
+          nome={jogo.nome}
+          cor={jogo.cor}
+          jogadores={jogadores.filter(jogador => jogador.jogo === jogo.nome)} />)}
+
         </div>
     </div>
   );
