@@ -17,7 +17,11 @@ function App() {
   const [jogadores, setJogadores] = useState([]);
 
   const aoNovoJogadorAdicionado = (jogador) => {
-    setJogadores([...jogadores, jogador]);
+    const jogadorFormatado = {
+        ...jogador,
+        nome: `${jogador.nome} '${jogador.nick}'`
+    };
+    setJogadores([...jogadores, jogadorFormatado]);
     console.log(jogadores);
   }
 

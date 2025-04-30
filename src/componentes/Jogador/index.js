@@ -8,7 +8,6 @@ const Jogador = ({nome,funcao,imagem,nick}) => {
             </div>
             <div className='rodape'>
                 <h4 className="nome-jogador">{nome}</h4>
-                <h5 className="nick-jogador">{nick}</h5>
                 <h5 className="posicao-jogador">{funcao}</h5>
             </div>
 

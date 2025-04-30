@@ -11,7 +11,7 @@ const Jogo = (props) => {
         (props.jogadores.length > 0) ?<section className="jogo" style={estilo}>
             <h3>{props.nome}</h3>
             <div className="jogadores">
-                {props.jogadores.map(jogador => <Jogador nome={jogador.nome} funcao={jogador.funcao} imagem={jogador.imagem}/>)}
+                {props.jogadores.map(jogador => <Jogador key={jogador.nome}nome={jogador.nome} funcao={jogador.funcao} imagem={jogador.imagem}/>)}
             </div>
         </section>
 
