@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Jogo from './componentes/Jogo';
-import Jogador from './componentes/Jogador';
 
 
 function App() {
@@ -25,17 +24,25 @@ function App() {
     console.log(jogadores);
   }
 
+  function deletarJogador() {
+    console.log('Deletar jogador');
+  }
+
   return (
     <div className="App">
         <Banner />
         <Formulario jogos={jogos.map(jogo => jogo.nome)} aoJogadorCadastrado={jogador => aoNovoJogadorAdicionado(jogador)} />
         <div className="jogos">
 
-        {jogos.map(jogo => <Jogo
-          key={jogo.nome}
-          nome={jogo.nome}
-          cor={jogo.cor}
-          jogadores={jogadores.filter(jogador => jogador.jogo === jogo.nome)} />)}
+        {jogos.map(jogo =>
+          <Jogo
+            key={jogo.nome}
+            nome={jogo.nome}
+            cor={jogo.cor}
+            jogadores={jogadores.filter(jogador => jogador.jogo === jogo.nome)}
+            aoDeletar={deletarJogador}
+          />
+        )}
 
         </div>
     </div>
